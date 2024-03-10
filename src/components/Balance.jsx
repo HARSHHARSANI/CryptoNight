@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdDownload } from "react-icons/io";
 import { MdOutlineArrowUpward } from "react-icons/md";
+import { MdFileUpload } from "react-icons/md";
 
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
@@ -29,21 +30,21 @@ const Balance = () => {
         <div className="col-span-3 text-2xl pt-4 pl-4 mt-8">
           <div className="mt-4">₹ 1,300.00 INR</div>
         </div>
-        <div className="col-span-3 text-2xl pt-4 pl-4 mt-2">
-          <div className="flex gap-2">
+        <div className="col-span-3 text-2xl pt-4  mt-2">
+          <div className="flex flex-col gap-2 ml-4 items-center text-center">
             {" "}
-            <button className="bg-purple-400 hover:bg-purple-500 px-4 rounded-full py-2 ">
+            <button className="bg-purple-400 w-44 hover:bg-purple-500 px-4 rounded-full py-2 outline-none">
               <div className="flex items-center">
                 {" "}
                 <IoMdDownload />
-                <span className="ml-2"> Deposite</span>
+                <span className="ml-2 font-semibold"> Deposite</span>
               </div>
             </button>
-            <button className="bg-purple-400 hover:bg-purple-500 px-4 rounded-full py-2 ">
-              <div className="flex items-center">
+            <button className="bg-purple-400 w-44 hover:bg-purple-500 px-4 rounded-full py-2 outline-none">
+              <div className="flex items-center ">
                 {" "}
-                <MdOutlineArrowUpward />
-                <span className="ml-2"> Withdraw</span>
+                <MdFileUpload />
+                <span className="ml-2 font-semibold"> Withdraw</span>
               </div>
             </button>
           </div>
