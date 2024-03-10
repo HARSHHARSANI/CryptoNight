@@ -1,6 +1,5 @@
 import React from "react";
 import { IoMdDownload } from "react-icons/io";
-import { MdOutlineArrowUpward } from "react-icons/md";
 import { MdFileUpload } from "react-icons/md";
 
 import { IoIosInformationCircleOutline } from "react-icons/io";

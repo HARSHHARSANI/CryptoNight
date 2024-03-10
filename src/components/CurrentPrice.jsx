@@ -1,13 +1,20 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import { CiCirclePlus } from "react-icons/ci";
+import { GrSubtractCircle } from "react-icons/gr";
+import Date from "./Date";
+import Graph from "./Graph";
+import Times from "./Times";
 
 const CurrentPrice = () => {
   return (
-    <div className="text-4xl pt-8 w-full mr-20">
-      <div className="w-full pl-4 bg-white mx-10 rounded-3xl  h-96 ">
+    <div className="text-4xl pt-8 w-full mr-2 ">
+      <div className="w-auto pl-2 bg-white mx-10 rounded-xl  h-96 ">
         <div className="mt-4 ml-4 flex justify-between">
           <div>
-            <div className="text-sm font-semibold pt-4">Current Price</div>
+            <div className="text-sm font-semibold pt-4 text-gray-400">
+              Current Price
+            </div>
             <div className=" font-bold text-3xl flex mt-3">
               ₹26,670.25{" "}
               <span className="text-green-500 text-sm mt-3 ml-3">
@@ -17,13 +24,34 @@ const CurrentPrice = () => {
             </div>
           </div>
           <div>
-            <button className="bg-gray-300 hover:bg-green-500 px-5 rounded-2xl py-1.5   outline-none mr-6 mt-6">
-              <spam className="text-md">Buy</spam>
+            <button className="bg-gray-300 hover:bg-green-500 px-5 rounded-2xl py-1 outline-none mr-6 mt-6">
+              <spam className="text-[22px] text-center items-center flex gap-2">
+                <div className="bg-white rounded-full outline-none m-0 p-0 text-gray-600">
+                  <CiCirclePlus />
+                </div>
+                Buy
+              </spam>
             </button>
-            <button className="bg-gray-300 hover:bg-red-500 px-5 rounded-2xl py-1.5   outline-none mr-6 mt-6">
-              Sell
+            <button className="bg-gray-300 hover:bg-red-500 px-5 rounded-2xl py-1   outline-none mr-6 mt-6">
+              <spam className="text-[22px] text-center items-center flex gap-2">
+                {" "}
+                <div className="bg-white rounded-full outline-none m-0 p-0 text-gray-600">
+                  <GrSubtractCircle />
+                </div>
+                Sell
+              </spam>
             </button>
           </div>
+        </div>{" "}
+        <div className="text-base ml-80">
+          {" "}
+          <Date />
+        </div>
+        <div>
+          <Graph />
+        </div>
+        <div>
+          <Times />
         </div>
       </div>
     </div>
