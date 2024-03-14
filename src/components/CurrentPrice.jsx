@@ -2,8 +2,8 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { CiCirclePlus } from "react-icons/ci";
 import { GrSubtractCircle } from "react-icons/gr";
-import Date from "./Date";
 import Graph from "./Graph";
+import Date from "./Date.jsx";
 import Times from "./Times";
 
 const CurrentPrice = () => {
