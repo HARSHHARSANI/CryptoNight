@@ -18,16 +18,16 @@ const Hero = () => {
           <div className="mb-4 sm:mb-0">
             <CurrentPrice />
           </div>
-          <div className="mb-4 sm:mb-0">
+          <div className="mb-4 sm:mb-0" style={{ marginLeft: "-60px" }}>
             <RecentTransaction />
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row  sm:gap-4 justify-around ">
+        <div className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row 2xl:flex-row  sm:gap-4 justify-between ">
           <div className="mb-4 sm:mb-0">
             <Loans />
           </div>
-          <div className="mb-4 sm:mb-0">
+          <div className="mb-4 sm:mb-0 ">
             <Contact />
           </div>
         </div>

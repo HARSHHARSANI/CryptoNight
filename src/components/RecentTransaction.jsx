@@ -26,7 +26,7 @@ const RecentTransaction = () => {
                     </span>
                   </div>
                 </div>
-                <span className="text-lg ml-20 font-semibold">
+                <span className="text-lg ml-20 font-semibold sm:text-sm">
                   +Rs 81,123.10
                 </span>
               </div>
@@ -43,7 +43,7 @@ const RecentTransaction = () => {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-lg ml-8 font-semibold">
+                  <span className="text-lg ml-20 font-semibold sm:text-sm">
                     - 12.48513391 BTC
                   </span>
                 </div>
