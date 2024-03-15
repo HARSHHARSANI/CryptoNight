@@ -1,11 +1,16 @@
 import "./App.css";
 import Dashboard from "./Dashboard/Dashboard";
+import { Route, Routes } from "react-router-dom";
+import Transaction from "./Transaction/Transaction";
+import Support from "./Support/Support";
 
 function App() {
   return (
-    <>
-      <Dashboard />
-    </>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/transaction" element={<Transaction />} />
+      <Route path="/contactus" element={<Support />} />
+    </Routes>
   );
 }
 
