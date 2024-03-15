@@ -12,63 +12,58 @@ const Sidenav = () => {
   return (
     <div className="mr-4 h-full">
       <div className="text-2xl mt-6 ml-4">
-        <div className="flex items-center w-full sm:w-auto pl-4  sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
-          {" "}
+        <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
           <div className="text-4xl">
             <RiMoneyPoundCircleFill />
           </div>
-          <span className=" sm:hidden md:hidden lg:inline-block ml-2">
+          <span className="sm:hidden md:hidden lg:inline-block ml-2">
             CryptoNight
           </span>
         </div>
         <div className="flex flex-col mt-8">
-          <div className="flex items-center w-full sm:w-auto pl-4  sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl ">
+          <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
             <MdSpaceDashboard />
             <button
               className="ml-1 mr-4 outline-none"
               onClick={() => navigate("/")}
             >
-              <span className="sm:hidden md:hidden lg:inline-block ">
+              <span className="sm:hidden md:hidden lg:inline-block">
                 Dashboard
               </span>
             </button>
           </div>
-          <div className="flex items-center w-full sm:w-auto pl-4  sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
+          <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
             <MdAttachMoney />
             <button
               className="ml-1 mr-4 outline-none"
-              onClick={() => {
-                navigate("/transaction");
-              }}
+              onClick={() => navigate("/transaction")}
             >
-              <span className="sm:hidden md:hidden lg:inline-block ">
+              <span className="sm:hidden md:hidden lg:inline-block">
                 Transaction
               </span>
             </button>
           </div>
-          <div className="flex items-center  sm:w-auto pl-4  sm:mx-auto justify-start outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl ">
+          <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
             <FaMoneyBill1 />
             <button
-              className="ml-1 mr-4 outline-none w-[104px]"
-              onClick={() => navigate("/transaction")}
+              className="ml-1 mr-4 outline-none"
+              onClick={() => navigate("/loans")} // Corrected route
             >
-              <span className="sm:hidden md:hidden lg:inline-block   ml-4">
-                Loans
-              </span>
+              <span className="sm:hidden md:hidden lg:inline-block">Loans</span>
             </button>
           </div>
-          <div className="flex items-center w-full sm:w-auto pl-4  sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
+          <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-8 py-2 rounded-xl">
             <GrResources />
             <button
               className="ml-1 mr-4 outline-none"
-              onClick={() => navigate("/transaction")}
+              onClick={() => navigate("/resources")}
             >
-              <span className="sm:hidden md:hidden lg:inline-block ">
+              <span className="sm:hidden md:hidden lg:inline-block">
                 Resources
               </span>
             </button>
           </div>
-          <div className="flex items-center w-full  sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-64 py-2 rounded-xl">
+          <div className="flex items-center w-full sm:w-auto pl-4 sm:mx-auto justify-center outline-none hover:border-gray-400 hover:bg-gray-200 mt-64 py-2 rounded-xl">
             <MdSupportAgent />
             <button
               className="ml-1 mr-4 outline-none"
